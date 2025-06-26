@@ -1,19 +1,17 @@
 [project]
-name = "projeto_01"
+name = "backend"
 version = "0.1.0"
 description = "Default template for PDM package"
 authors = [
     {name = "willian", email = "nobrewillian756@gmail.com"},
+    {name = "williannobree", email = "nobrewillian756@gmail.com"},
 ]
-dependencies = ["django>=5.2.3"]
-requires-python = ">=3.10"
+dependencies = [
+    "django>=5.2.3",
+]
+requires-python = "==3.10.*"
 readme = "README.md"
 license = {text = "MIT"}
 
-[build-system]
-requires = ["pdm-backend"]
-build-backend = "pdm.backend"
-
-
 [tool.pdm]
-distribution = true
+distribution = false

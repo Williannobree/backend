@@ -14,7 +14,7 @@ class tipoInsumo(models.Model):
 
 class Insumo(models.Model):
     nome = models.CharField(max_length=100, unique=True)
-    tipo = models.ForeignKey(tipoInsumo, on_delete=models.PROTECT)
+    tipo = models.ForeignKey (tipoInsumo, on_delete=models.CASCADE, related_name='insumos')
     unidadeMedida = models.CharField(
     max_length=10,
     choices=[
